@@ -5,7 +5,7 @@ import { SlidersHorizontal, X, ChevronDown } from 'lucide-react';
 import ProductCard from '../components/ProductCard';
 import './ProductsPage.css';
 
-const API = 'http://localhost:8000/api';
+const API = `${process.env.REACT_APP_API_URL}/api`;
 
 const sortOptions = [
   { value: '', label: 'Default' },

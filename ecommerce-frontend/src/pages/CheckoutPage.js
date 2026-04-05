@@ -5,7 +5,7 @@ import toast from 'react-hot-toast';
 import { useCart } from '../context/CartContext';
 import './CheckoutPage.css';
 
-const API = 'http://localhost:8000/api';
+const API = `${process.env.REACT_APP_API_URL}/api`;
 
 export default function CheckoutPage() {
   const { cart, fetchCart } = useCart();

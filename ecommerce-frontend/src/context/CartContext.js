@@ -3,7 +3,7 @@ import axios from 'axios';
 import toast from 'react-hot-toast';
 
 const CartContext = createContext();
-const API = 'http://localhost:8000/api';
+const API = `${process.env.REACT_APP_API_URL}/api`;
 const getSessionKey = () => localStorage.getItem('cart_session') || '';
 
 export function CartProvider({ children }) {

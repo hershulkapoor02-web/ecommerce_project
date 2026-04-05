@@ -93,7 +93,8 @@ CORS_ALLOW_HEADERS = [
     'x-cart-session',
 ]
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # for local development
+    "http://localhost:3000", # for local development
+    "https://ecommerce-frontend.onrender.com"  
 ]
 # REST Framework
 REST_FRAMEWORK = {

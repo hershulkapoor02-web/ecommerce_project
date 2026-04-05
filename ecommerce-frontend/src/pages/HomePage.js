@@ -5,7 +5,7 @@ import { ArrowRight, Zap, Shield, Truck, RefreshCw } from 'lucide-react';
 import ProductCard from '../components/ProductCard';
 import './HomePage.css';
 
-const API = 'http://localhost:8000/api';
+const API = `${process.env.REACT_APP_API_URL}/api`;
 
 const categories = [
   { slug: 'electronics', label: 'Electronics', emoji: '⚡', color: '#e8f4fd' },

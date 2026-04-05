@@ -4,7 +4,7 @@ import axios from 'axios';
 import { CheckCircle, Package, MapPin, Mail } from 'lucide-react';
 import './OrderSuccessPage.css';
 
-const API = 'http://localhost:8000/api';
+const API = `${process.env.REACT_APP_API_URL}/api`;
 
 export default function OrderSuccessPage() {
   const { orderId } = useParams();

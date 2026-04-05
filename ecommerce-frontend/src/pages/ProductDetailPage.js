@@ -5,7 +5,7 @@ import { ShoppingCart, ArrowLeft, Star, Shield, Truck, Package, Plus, Minus } fr
 import { useCart } from '../context/CartContext';
 import './ProductDetailPage.css';
 
-const API = 'http://localhost:8000/api';
+const API = `${process.env.REACT_APP_API_URL}/api`;
 
 export default function ProductDetailPage() {
   const { slug } = useParams();

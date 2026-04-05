@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Package, Truck, CheckCircle, Clock, XCircle, Search, MapPin, Mail, Phone, ShoppingBag } from 'lucide-react';
 import './TrackOrderPage.css';
 
-const API = 'http://localhost:8000/api';
+const API = `${process.env.REACT_APP_API_URL}/api`;
 
 const STATUS_STEPS = [
   { key: 'pending',    label: 'Order Placed',  icon: <Clock size={20}/>,        desc: 'Your order has been received' },
